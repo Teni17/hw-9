@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Fitness</title>
+  <!-- <documentation at http://demos.jquerymobile.com/1.4.1/ > -->
+
+  <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="/javasripts/ 
+  
+  
+  test.js"></script>
+  <link rel="stylesheet" type="text/css" href="idex.css">
+
+</head>
+
+<body>
+
+  <!-- Start of  page ------------------------------------------------------------------>
+  <div data-role="page" id="home">
+
+    <!--   page header -->
+    <div data-role="header" data-theme='a'>
+      <h1>My Fitness</h1>
+      <div data-role="navbar" data-theme='b'>
+        <ul>
+          <li><a href="#home">Home Page</a></li>
+          <li><a href="#Load">Enter your stats</a></li>
+          <li><a href="#ListAll">Registered users</a></li>
+        </ul>
+      </div><!-- /navbar -->
+    </div>
+
+    <!--   page content -->
+    <div data-role="content" data-theme='b'>
+      <div class="newFont">
+        <h2> Get Active!</h2>
+        <p1> We try to help people make the most of their bodies with sports and excercises</p1>
+      </div>
+    </div>
+
+    <!--  page footer -->
+    <div data-role="footer" data-theme='b'>
+      <h1>Copyright 2022 by Teni Olugboyega </h1>
+    </div>
+  </div>
+  <!-- End of  page ------------------------------------------------------------------>
+
+  <div data-role="page" id="Load">
+    <!--  page header -->
+    <div data-role="header" data-theme='a'>
+      <h1>Enter your stats</h1>
+      <div data-role="navbar" data-theme='b'>
+        <ul>
+          <li><a href="#home">Home Page</a></li>
+        
+          <li><a href="#ListAll">Registered users</a></li>
+        </ul>
+      </div><!-- /navbar -->
+
+    </div>
+<!-- page content -->
+  
+<div data-role="content" data-theme='c'>
+    <h2>What are your stats</h2>
+    Enter your name <br />
+    <input type="text" value="" id="name" />
+    Enter your height(cm) <br />
+    <input type="text" value="" id="height" />
+    Enter your weight(pounds) <br />
+    <input type="text" value="" id="weight" />
+</div>
+<input type="button" value="Add your profile" id="buttonAdd" data-inline="true" />
+<input type="button" value="Clear Data" id="buttonClear" data-inline="true" />
+</div>
+
+ <!--   page footer -->
+ <div data-role="footer" data-theme='b'>
+    <h1>Copyright 2022 by Teni Olugboyega </h1>
+  </div>
+</div>
+
+<div data-role="page" id="ListAll">
+    <!--   page header -->
+    <div data-role="header" data-theme='a'>
+      <h1>Registered users</h1>
+      <div data-role="navbar" data-theme='b'>
+        <ul>
+          <li><a href="#home">Home Page</a></li>
+          <li><a href="#Load">Add user</a></li>
+         
+        </ul>
+      </div><!-- /navbar -->
+
+    </div>
+    <!--   page content -->
+    <div data-role="content" data-theme='e'>
+      <p> Athletes</p>
+      <div id="divUserList">
+        <ul id="myul"></ul>
+      </div>
+      <input type="button" value="Sort By Weight" id="buttonSortWeight" data-inline="true" />
+      <input type="button" value="Sort By Height" id="buttonSortHeight" data-inline="true" />
+    </div>
+
+
+    <!--   page footer -->
+    <div data-role="footer" data-theme='b'>
+      <h1>Copyright 2022 by Teni Olugboyega</h1>
+    </div>
+  </div>
+  </div>
+  <div data-role="page" id="details">
+  
+    <!--   page header -->
+    <div data-role="header" data-theme='a'>
+      <h1>User Routine</h1>
+      <div data-role="navbar" data-theme='b'>
+        <ul>
+          <li><a href="#home">Home Page</a></li>
+          <li><a href="#Load">Add User</a></li>
+          <li><a href="#ListAll">Registered Users</a></li>
+  
+        </ul>
+      </div><!-- /navbar -->
+    </div>
+  
+    <!--  content --> 
+    <div data-role="content" data-theme='c'>
+     <h3>Here is the routine for <p id="theUserID"></p></h3>
+     <div id="demo">
+    <input type = "button" onclick = "display()" value = "Display"> 
+    </div>
+    </div>
+  
+    <!--    footer -->
+    <div data-role="footer" data-theme='b'>
+      <h1>Copyright 2022 by Teni Olugboyega</h1>
+    </div>
+  
+  </div>
+  
+
+</body>
+   
